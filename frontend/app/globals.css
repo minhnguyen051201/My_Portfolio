@@ -128,13 +128,6 @@
   --input: rgba(255, 255, 255, 0.16);
   --ring: #32de8a;
 
-  /* Optional chart colors */
-  --chart-1: #32de8a;
-  --chart-2: #f2af29;
-  --chart-3: #ad343e;
-  --chart-4: #474747;
-  --chart-5: #ffffff;
-
   /* Sidebar */
   --sidebar: #000000;
   --sidebar-foreground: #ffffff;
