@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   const pathName = usePathname();
@@ -11,7 +12,7 @@ const NavBar = () => {
     { href: "/about", label: "about" },
   ];
   return (
-    <div>
+    <div className="w-full h-fit flex items-center justify-between">
       <ul className="flex text-xl gap-18">
         {navItems.map((items) => (
           <li
@@ -22,6 +23,7 @@ const NavBar = () => {
           </li>
         ))}
       </ul>
+      <ThemeToggle />
     </div>
   );
 };
