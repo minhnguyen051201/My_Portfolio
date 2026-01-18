@@ -1,18 +1,13 @@
-"use client";
 import { LucidePhone } from "lucide-react";
 import { Button } from "../ui/button";
 import HeroCube from "../HeroCube";
+import NavBar from "../NavBar";
 const RightSidebar = () => {
   return (
     <div className="w-full h-full flex flex-col py-10 px-16">
       {/* Navigation bar */}
       <div className="w-full h-fit flex justify-between items-center">
-        <div className="flex text-xl gap-18">
-          <div className="border-b-3 border-[#157145] pb-1">projects</div>
-          <div>certificates</div>
-          <div>resume</div>
-          <div>about</div>
-        </div>
+        <NavBar />
         <div className="flex-none flex gap-2 font-semibold text-destructive">
           <LucidePhone strokeWidth={2} />
           Schedule a Call
@@ -21,7 +16,7 @@ const RightSidebar = () => {
       {/* Main content */}
       <div className="flex flex-auto items-center">
         {/* Quotes */}
-        <div className="flex-auto flex flex-col gap-4 font-semibold">
+        <div className="flex-1 flex flex-col gap-4 font-semibold">
           <p className="text-xl">Hi There,</p>
           <p className="text-8xl">I am Minh</p>
           <p className="text-6xl">I am a data scientist</p>
@@ -34,8 +29,8 @@ const RightSidebar = () => {
             </Button>
           </div>
         </div>
-        {/* Image */}
-        {/* <HeroCube /> */}
+        {/* 3D cube */}
+        <div className="flex-1">{/* <HeroCube /> */}</div>
       </div>
       {/* Contact */}
       <div className="h-fit flex justify-evenly w-2/3 text-sm">

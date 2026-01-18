@@ -160,16 +160,31 @@
 }
 
 @keyframes cube-spin {
+  /* Rotate on X first */
   0% {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
+  40% {
+    transform: rotateX(360deg) rotateY(0deg);
+  }
+
+  /* Pause slightly */
+  50% {
+    transform: rotateX(360deg) rotateY(0deg);
+  }
+
+  /* Then rotate on Y */
+  90% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+
   100% {
-    transform: rotateY(360deg);
+    transform: rotateX(360deg) rotateY(360deg);
   }
 }
 
 .animate-cube-spin {
-  animation: cube-spin 14s linear infinite;
+  animation: cube-spin 26s ease-in-out infinite;
 }
 
 /* Cube depth */
