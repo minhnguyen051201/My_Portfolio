@@ -1,12 +1,10 @@
 "use client";
-import LeftSidebar from "../components/sidebar/LeftSidebar";
-import RightSidebar from "../components/sidebar/RightSidebar";
+import Hero from "../components/sidebar/Hero";
 
 export default function Home() {
   return (
-    <main className="min-h-screen text-foreground grid grid-cols-[80px_1fr]">
-      <LeftSidebar />
-      <RightSidebar />
-    </main>
+    <div className="w-full h-full">
+      <Hero />
+    </div>
   );
 }
