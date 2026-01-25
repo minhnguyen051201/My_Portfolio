@@ -22,7 +22,10 @@ const RightSidebar = () => {
           </div>
         </div>
         {/* 3D cube */}
-        <div className="flex-1">{/* <HeroCube /> */}</div>
+        <div className="flex-1">
+          This is the cube
+          {/* <HeroCube /> */}
+        </div>
       </div>
       {/* Contact */}
       <div className="h-fit flex justify-evenly w-2/3 text-sm">
