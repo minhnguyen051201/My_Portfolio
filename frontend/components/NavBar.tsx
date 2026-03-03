@@ -16,7 +16,7 @@ const NavBar = () => {
       <ul className="flex text-xl gap-18">
         {navItems.map((items) => (
           <li
-            className={`${pathName === items.href ? "border-b-3 border-[#157145]" : "pb-2"}`}
+            className={`${pathName === items.href ? "border-b-3 border-primary" : "pb-2"}`}
             key={items.href}
           >
             <Link href={items.href}>{items.label}</Link>

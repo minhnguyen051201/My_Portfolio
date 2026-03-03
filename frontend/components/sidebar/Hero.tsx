@@ -1,6 +1,6 @@
 import { Button } from "../ui/button";
-import HeroCube from "../HeroCube";
-const RightSidebar = () => {
+import HeroCube from "./HeroCube";
+const Hero = () => {
   return (
     <div className="w-full h-full flex flex-col">
       {/* Navigation bar */}
@@ -46,4 +46,4 @@ const RightSidebar = () => {
   );
 };
 
-export default RightSidebar;
+export default Hero;
