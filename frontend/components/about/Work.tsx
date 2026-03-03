@@ -1,5 +1,5 @@
 "use client";
-import { StepCard } from "./StepsCard";
+import { StepCard } from "./StepCards";
 
 const Work = () => {
   return (
@@ -9,13 +9,7 @@ const Work = () => {
         <p className="text-2xl">How I work</p>
         <p className="text-sm">Structured, repetitive, and automated</p>
       </div>
-      <div className="size-full flex gap-4">
-        <StepCard />
-        <StepCard />
-        <StepCard />
-        <StepCard />
-        <StepCard />
-      </div>
+      <StepCard />
     </div>
   );
 };
